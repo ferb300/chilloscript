@@ -112,6 +112,7 @@ try {
         fs.mkdirSync(destination.substring(0, destination.lastIndexOf("/")), { recursive: true });
         let transpiled = transpile(contents, file)
         fs.writeFileSync(destination, transpiled);
+        console.log(`🤩 Transpiled ${file} to ${destination}`)
     }
 } catch (e) {
     printError(e.message)
