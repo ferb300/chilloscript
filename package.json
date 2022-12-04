@@ -1,6 +1,6 @@
 {
   "name": "chilloscript",
-  "version": "1.0.3",
+  "version": "1.0.4.1.0.1",
   "description": "A JavaScript Transpiler that enables you to use emojis as and within identifiers.",
   "main": "src/index.js",
   "scripts": {

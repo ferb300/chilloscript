@@ -25,7 +25,7 @@ function getPosition(string, subString, index) {
 function printError(message) {
     let emojis = ["🤨", "😐", "😑", "😒", "🙄", "😬", "🤮", "🤡", "🙈", "😾"]
     let e = emojis[getRandomInt(emojis.length - 1)]
-    console.error(e + ": " + message)
+    console.error(e + " " + message)
 }
 
 function ex(c) {
