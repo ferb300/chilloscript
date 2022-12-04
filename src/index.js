@@ -108,9 +108,10 @@ try {
         };
         let contents = fs.readFileSync(file).toString()
         let newFn = file.replace(".🤙", ".js")
-        let destination = options.outDir ? trim(options.outDir, "/") + newFn.substring(getPosition(newFn, "/", 2)) : newFn;
+        let destination = options.outDir ? trim(options.outDir, "/") + newFn.substring(getPosition(newFn, "/", (newFn.startsWith(".") || newFn.startsWith("/")) ? 2 : 1)) : newFn;
         fs.mkdirSync(destination.substring(0, destination.lastIndexOf("/")), { recursive: true });
-        fs.writeFileSync(destination, transpile(contents, file));
+        let transpiled = transpile(contents, file)
+        fs.writeFileSync(destination, transpiled);
     }
 } catch (e) {
     printError(e.message)
