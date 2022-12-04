@@ -1,0 +1,33 @@
+{
+  "name": "chilloscript",
+  "version": "1.0.1",
+  "description": "A JavaScript Transpiler that enables you to use emojis as and within identifiers.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferb300/chilloscript.git"
+  },
+  "bin": {
+    "chilloscript": "src/index.js"
+  },
+  "keywords": [
+    "emoji",
+    "identifiers",
+    "javascript",
+    "transpiler"
+  ],
+  "author": "Moritz Tietze",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/ferb300/chilloscript/issues"
+  },
+  "homepage": "https://github.com/ferb300/chilloscript#readme",
+  "dependencies": {
+    "command-line-args": "^5.2.1",
+    "js-tokens": "^8.0.0"
+  }
+}
